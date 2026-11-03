@@ -211,7 +211,7 @@ async def add_favourite_film(message: Message):
     all_data = read_data()
     text_parts = message.text.split(maxsplit=1)
     if len(text_parts) < 2:
-        await message.answer("Please write the correct name e.g. /fav Harry Potter")
+        await message.answer("Please write the correct name e.g. /addfav Harry Potter")
         return
     film_name = text_parts[1].strip()
 
