@@ -145,8 +145,8 @@ def films_list_kb(films: list[dict], page: int):
 
 def film_card_kb(index: int, page: int):
     kb = InlineKeyboardBuilder()
-    kb.button(text="⭐ В избранное", callback_data=FilmFav(index=index, page=page))
-    kb.button(text="⬅️ К списку", callback_data=FilmsPage(page=page))
+    kb.button(text="⭐ Add to favourite", callback_data=FilmFav(index=index, page=page))
+    kb.button(text="⬅️ Back", callback_data=FilmsPage(page=page))
     kb.adjust(1)
     return kb.as_markup()
 
